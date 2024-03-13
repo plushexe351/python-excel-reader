@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background-color: #1a1a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #313148;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100vw;
+    z-index: 9;
+}
+
+#navbar>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+#navbar>a:hover {
+    color: lightgray;
+}
+
+header {
+    text-align: center;
+    margin: 60px 1rem 1rem 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+header img {
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+    flex-shrink: 0;
+}
+
+#hero-text span {
+    color: lightgreen;
+}
+
+#excel_file,
+#submit {
+    display: none;
+}
+
+.btn {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    max-width: 80vw;
+    height: 70px;
+    padding: 1.2rem 2.2rem;
+    gap: 1rem;
+    margin-block: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    color: white;
+    border-bottom: 1px solid rgba(71, 61, 139, 0.522);
+    box-shadow: inset 0 -5px 3rem rgba(71, 61, 139, 0.322);
+    background: rgba(0, 0, 0, 0.686);
+    cursor: pointer;
+}
+
+#label_for_input {
+    display: flex;
+}
+
+#label_for_submit {
+    display: none;
+    border-bottom: 1px solid rgba(144, 238, 144, 0.157);
+    box-shadow: inset 0 -5px 3rem rgba(144, 238, 144, 0.066);
+}
+
+.btn>span {
+    margin-right: auto;
+}
+
+.icon-container {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 5px 1rem rgba(110, 98, 187, 0.427);
+    background-color: rgb(110, 98, 187);
+    color: white;
+}
+
+#label_for_submit>.icon-container {
+    box-shadow: 0 5px 1rem rgba(144, 238, 144, 0.272);
+    background-color: lightgreen;
+    color: black;
+}
+
+.icon-container>.fa-solid {
+    font-size: 0.8rem;
+}
+
+#fileInputSuccessIcon {
+    color: lightgreen;
+}
+
+
+.result_container {
+    overflow: hidden;
+    border-radius: 0.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    width: 90vw;
+    overflow: scroll;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: 300;
+    background-color: rgba(13, 7, 23, 0.686);
+    color: white;
+    border: none;
+    font-size: 0.9em;
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.039);
+}
+
+th {
+    color: lightgray;
+    opacity: 0.8;
+    font-weight: 700;
+    font-size: 0.85em;
+}
+
+.info {
+    margin-top: 1rem;
+    width: 90vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.info>* {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    max-width: 80vw;
+    height: 70px;
+    height: max-content;
+    padding: 1.2rem 2.2rem;
+    gap: 1rem;
+    font-size: 0.9rem;
+    border: none;
+    color: rgb(154, 59, 243);
+    border-radius: 0.8rem;
+    border-bottom: 1px solid rgba(71, 61, 139, 0.522);
+    box-shadow: inset 0 -5px 3rem rgba(71, 61, 139, 0.322);
+    background: rgba(0, 0, 0, 0.686);
+    cursor: pointer;
+}
+
+.info>p>span {
+    color: white;
+}
+
+footer {
+    opacity: 0.7;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    font-size: 0.9rem;
+    color: white;
+}
+
+footer a {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: rgb(110, 98, 187);
+}
