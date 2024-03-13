@@ -19,14 +19,14 @@
   <body>
     <nav id="navbar">
       <a href="/index">Home</a>
-      <a href="/">Source</a>
+      <a href="https://github.com/plushexe351/python-excel-reader">Source</a>
     </nav>
     <header>
       <img src="../static/assets/Microsoft_Excel-Logo.wine.png" alt="" />
       <h1 id="hero-text"><span>Excel </span>Viewer</h1>
     </header>
     <label for="excel_file" class="btn" id="label_for_input">
-      <span>Add Sheet</span>
+      <span>Upload Sheet</span>
       <div class="icon-container">
         <i class="fa-solid fa-paperclip"></i>
       </div>
@@ -37,7 +37,7 @@
         <i class="fa-solid fa-table"></i>
       </div>
     </label>
-    <form method="POST" enctype="multipart/form-data" action="/upload">
+    <form method="POST" enctype="multipart/form-data" action="/preview">
       <input
         type="file"
         name="file"
@@ -49,7 +49,7 @@
     </form>
     <footer>
       &copy; 2024 created by
-      <a href="https://github.io/plushexe351">Ushnish Tapaswi</a>
+      <a href="https://github.com/plushexe351">Ushnish Tapaswi</a>
     </footer>
     <script src="{{url_for('static',filename='js/script.js')}}"></script>
   </body>

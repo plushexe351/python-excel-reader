@@ -11,10 +11,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/upload', methods=['POST'])
+@app.route('/preview', methods=['POST'])
 
 
-def upload():
+def preview():
     if request.method == 'POST':
         file = request.files['file']
         if file:
